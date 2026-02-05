@@ -30,5 +30,9 @@ for l in range(n_symbols):
 
 rand_pass = ab + bc + cd
 random.shuffle(rand_pass)
-final_pass = "".join(rand_pass)
-print(f"Your Password is: {final_pass}")
+password = ""
+
+for r in rand_pass:
+    password += r
+print(f"The Password is: {password}")
+
